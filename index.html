@@ -39,8 +39,10 @@
 				index = ++index % images.length;
 				$("#img").attr('src', images[index]);
 				$("#img2").attr('src', images[index]);
+			}, 50);
+			setInterval(() => {
 				$("#today").html( dayjs(new Date()).format("현재 시간 : YYYY-MM-DD(dd) HH:mm:ss"));
-			}, 500);
+			}, 1000);
 		});
 	</script>
 </head>
