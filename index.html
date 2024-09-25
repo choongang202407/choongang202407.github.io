@@ -38,6 +38,7 @@
 			setInterval(() => {
 				index = ++index % images.length;
 				$("#img").attr('src', images[index]);
+				$("#img2").attr('src', images[index]);
 				$("#today").html( dayjs(new Date()).format("현재 시간 : YYYY-MM-DD(dd) HH:mm:ss"));
 			}, 100);
 		});
@@ -47,6 +48,7 @@
 <body>
 	<div class="info">
 		<h2>
+			<img id="img2" width="50" height="50" />
 			HomePage에 오신것을 환영합니다.
 			<span id="today" class="today"></span>
 		</h2>
